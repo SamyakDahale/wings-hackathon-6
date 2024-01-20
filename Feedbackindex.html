@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Feedbackstyles.css">
+    <title>FeedBack form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Details</h2>
+        <form action="connect.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="Name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="PhoneNumber" name="phone" pattern="[0-9]{10}" required>
+            <small>Enter a 10-digit phone number.</small>
+            <label for="email">Email ID:</label>
+            <input type="email" id="EmailID" name="email" required>
+
+            <label for="complaint">Complaint:</label>
+            <textarea id="Complaint" name="complaint" rows="4" required></textarea>
+
+            <a href="http://localhost/webs/Feedbacksuccess.html">
+                <button type="button" id="submit" class="submit" value="submit"> SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
