@@ -21,6 +21,7 @@
 <br>
     <div class="cont">
         <div class="form sign-in">
+            <form action = "connect2.php" method = "post"></form>
             <h2>Welcome</h2>
             <label>
                 <span><b>Email</b></span>
@@ -31,7 +32,7 @@
                 <input type="password" />
             </label>
             
-            <a href="http://localhost/webs/deaf1.html">
+            <a href="http://localhost/webs/general.html">
                 <button type="button" class ="submit" value="submit" name="">Sign in</button>
             </a> 
          
@@ -94,5 +95,19 @@
     <script>
         document.querySelector('.img__btn').addEventListener('click', function() {
             document.querySelector('.cont').classList.toggle('s--signup');
+            
         });
+        function login() {
+            var username = $("#username").val();
+            var password = $("#password").val();
+
+            $.ajax({
+                type: "POST",
+                url: "login.php",
+                data: { username: username, password: password },
+                success: function(response) {
+                    console.log(response); // Handle the response from the server
+        }
+      });
+    }
     </script>

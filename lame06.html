@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lame Kids Assistance</title>
+    <link rel = "stylesheet" href = "General.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>पङ्गुजनानाम् सेवा - Lame Kids Assistance</h1>
+    </header>
+
+    <h2>Resources for Parent Guidence</h2>
+    <nav>
+        <a href="#Videos">Videos</a>
+        <a href="#PDF">PDF</a>
+        <a href="#NGO's Info">NGO's Info</a>
+            <input type="text" placeholder="Search..">
+          </div>
+    </nav>
+
+    <div class="dashboard" id="dashboard">
+        
+        <body>
+    
+            <div>
+          <h2 text-align: center;>WELCOME</h2>
+            <p>This Page provides information and resources to assist Lame kids.</p>
+            <img width="700" height="400" src="C:\Users\jawwa\Downloads\imagesall\sh1.jpeg" alt="Quote">
+        </div>
+        <!-- Add more dashboard components as needed -->
+    </div>
+
+    <div class="info-section" id="resources">
+
+        <div class="Videos" id="Videos"></div>
+        <h2>Videos</h2>
+        
+        <ul>
+            <li>01.How to Treat Wheelchair bound Child? (By- CBS New York)  02.Disability Inclusion Matters for All (- By World Bank)</li>
+            <!-- Container for the videos -->
+        <div class="video-container">
+        <!-- First YouTube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i1mqFtYI5x0" title="Help For Wheelchair Bound Child" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>         <!-- Second YouTube video -->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/VjxFhEbCLmM" title="Disability Inclusion Matters for All" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>             </div>
+
+            <nav><div class="PDF" id="PDF"></div> </nav>
+        <h2>PDF</h2>
+            <p><a href="https://ncert.nic.in/pdf/CWSN-FAQs.pdf" target="_blank"> Educational Rights of Children with Special Needs </a></p>
+            <p><a href="https://www.umaryland.edu/media/umb/oaa/campus-life/disability-services-/documents/Tips-for-Teaching-Students-Who-Are-Deaf-or-Hard-of-Hearing.pdf" target="_blank">Make a Difference TIPS FOR TEACHING STUDENTS WHO ARE Lame and wheelchair bound OR HARD OF HEARINGF</a></p>
+             </ul>
+    </div>
+    <nav><div class="NGO's Info" id="NGO's Info"></div> </nav>
+        <h2>NGO's Info</h2>
+    <div>
+    <table>
+        <thead>
+          <tr>
+            <th>Name of NGO</th>
+            <th>Address</th>
+            <th>Contact No. </th>
+            <th>Email ID </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Swayam </td>
+            <td>Vedant Nagar, Ch. Sambhajinagar</td>
+            <td>9512369522</td>
+            <td>swayam@gmail.com</td>
+          </tr>
+          <tr>
+            <td>श्री गणेश अंगणवाडी </td>
+            <td>स्टेशन रोड, जालना </td>
+            <td>9516719522</td>
+            <td>SGA@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Niyotam </td>
+            <td>Mondha Naka, Ch. Sambhajinagar</td>
+            <td>9512111522</td>
+            <td>Niyotam_2000@gmail.com</td>
+          </tr>
+        </tbody>
+      </table> </div>
+    
+
+    
+        
+      <a href="http://localhost/webs/Feedbackindex.html">
+            <button>Feedback Form</button>
+            <a href="http://localhost/webs/index.html">
+                <button>Return to Home Page</button> </div>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lame Kids Assistance</p>
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
+        function toggleBackToTopButton() {
+            var button = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>

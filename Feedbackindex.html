@@ -9,21 +9,22 @@
 <body>
     <div class="container">
         <h2>Details</h2>
-        <form action="connect.php" method="post">
+        <form action="Feedbackindex.html" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="Name" name="name" required>
+            <input type="text" id="name" name="name" required>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="PhoneNumber" name="phone" pattern="[0-9]{10}" required>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
             <small>Enter a 10-digit phone number.</small>
+            
             <label for="email">Email ID:</label>
-            <input type="email" id="EmailID" name="email" required>
+            <input type="email" id="email" name="email" required>
 
             <label for="complaint">Complaint:</label>
-            <textarea id="Complaint" name="complaint" rows="4" required></textarea>
+            <textarea id="complaint" name="complaint" rows="4" required></textarea>
 
             <a href="http://localhost/webs/Feedbacksuccess.html">
-                <button type="button" id="submit" class="submit" value="submit"> SUBMIT</button>
+                <button type="button" class="submit" value="submit"> SUBMIT</button>
         </form>
     </div>
 </body>

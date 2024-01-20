@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistance Portal</title>
+    <link rel = "stylesheet" href = "General.css">
+
+</head>
+<body>
+
+    <header>
+        <h1> Assistance Portal for Disabled Children </h1>
+    </header>
+     
+    <nav>
+
+        <a href="#dashboard">Dashboard</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#contactus">Contact Us</a>
+        <div class="topnav">
+            
+            <input type="text" placeholder="Search..">
+          </div>
+    </nav>
+
+    <div class="dashboard" id="dashboard">
+        
+        <body>
+    
+              <div>
+            <h2 text-align: center;>WELCOME</h2>
+            <p1> Dear Mom and Dad, <br>
+                In the dance of life, our child has led us to a symphony of love and resilience. 
+                Your unwavering strength lights the path, making every step worthwhile. <br> 
+                In their unique journey, we've found a depth of love that knows no bounds. 
+                Thank you for being the heroes our family needs.<br>
+                With love,<br>
+                Team Infinity.</p1>
+        </div>
+        <!-- Add more dashboard components as needed -->
+    </div>
+    <div><h2 text-align: center;>Select disability-services</h2>
+    <a href="http://localhost/webs/deaf12.html">
+        <button type="button" class="submit" value="submit"> DEAF</button>
+    <a href="http://localhost/webs/blind06.html">
+        <button type="button" class="submit" value="submit"> BLIND</button>
+    <a href="http://localhost/webs/lame06.html">
+        <button type="button" class="submit" value="submit"> LAME</button> </div>
+
+    <div class="info-section" id="Gallery">
+        <h2>Some glorious movements from our journeys</h2>
+        <table border="0" cellpadding="0" cellspacing="0" style="margin: auto;">
+            <tr>
+              <td><img width="350" height="250" src= "C:\Users\jawwa\Downloads\imagesall\img2.jpeg" alt="Image 1"></td>
+              <td><img width="350" height="250" src="C:\Users\jawwa\Downloads\imagesall\d3.jpeg"alt="Image 2"></td>   
+            </tr>
+            <tr>
+                <td><img width="350" height="250" src="C:\Users\jawwa\Downloads\imagesall\d2.jpeg" alt="Image 3"></td>         
+                     <td><img width="350" height="250" src="C:\Users\jawwa\Downloads\imagesall\d1.jpeg" alt="Image 4"></td>
+            
+          </table>
+          
+
+
+
+
+
+    <div class="info-section" id="contactus">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further ass istance, please reach out to us:</p>
+        <p>Email: info@deafkidsassistance.org</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <a href="http://localhost/webs/Feedbackindex.html">
+            <button>Feedback Form</button>
+            
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Disabled Kids Assistance</p>
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
+        function toggleBackToTopButton() {
+            var button = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
