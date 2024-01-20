@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deaf Kids Assistance</title>
+    <link rel = "stylesheet" href = "deaf12.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>बाधरिय - Deaf Kids Assistance</h1>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="dashboard" id="dashboard">
+        
+        <body>
+    
+              <div>
+            <h2>Welcome to the Deaf Kids Assistance Portal</h2>
+            <p>This dashboard provides information and resources to assist deaf kids.</p>
+        </div>
+        <!-- Add more dashboard components as needed -->
+    </div>
+
+    <div class="info-section" id="resources">
+        <h2>Resources for Parent Guidence</h2>
+        <nav>
+        <a href="#Videos">Videos</a>
+        <a href="#PDF">PDF</a> </nav>
+
+        <div class="Videos" id="Videos"></div>
+        <h2>Videos</h2>
+        
+        <ul>
+            <li>01.How to Treat Deaf Child? (By- FreeMedSchool)  02.Tips for teaching deaf children with a mild hearing loss
+            (By-National Deaf Children's Society)</li>
+            <!-- Container for the videos -->
+        <div class="video-container">
+        <!-- First YouTube video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ObV0I3llsbA" title="How to Treat Deaf Child?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+         <!-- Second YouTube video -->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/jylb7TDn2Tk" title="Tips for teaching deaf children with a mild hearing loss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+             </div>
+
+            <nav><div class="PDF" id="PDF"></div> </nav>
+        <h2>PDF</h2>
+            <p><a href="https://www.researchgate.net/publication/329997503_Support_for_Parents_of_Deaf_Children_Common_Questions_and_Informed_Evidence-based_Answers" target="_blank"> Support for Parents of Deaf Children: Common Questions and Informed </a></p>
+            <p><a href="https://www.umaryland.edu/media/umb/oaa/campus-life/disability-services-/documents/Tips-for-Teaching-Students-Who-Are-Deaf-or-Hard-of-Hearing.pdf" target="_blank">Make a Difference TIPS FOR TEACHING STUDENTS WHO ARE DEAF OR HARD OF HEARINGF</a></p>
+
+            
+
+            
+        </ul>
+    </div>
+
+    <div class="info-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further assistance, please reach out to us:</p>
+        <p>Email: info@deafkidsassistance.org</p>
+        <p>Phone: +1 (555) 123-4567</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Deaf Kids Assistance</p>
+    </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        window.onscroll = function() {
+            toggleBackToTopButton();
+        };
+
+        function toggleBackToTopButton() {
+            var button = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
